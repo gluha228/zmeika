@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameWindow">
+        <div id="game">game</div>
+        <div id="reset" onclick="reset()">start/reset</div>
+        <div id="record" onclick="Pause()">record</div>
+
+        <div class="block" style="grid-area: up;" onclick="if (direction[0] != 1){direction=[-1,0]; oneInputFlag=1;}">up</div>
+        <div class="block" style="grid-area: down;" onclick="if (direction[0] != -1) {direction=[1,0]; oneInputFlag=1;}">down</div>
+        <div class="block" style="grid-area: left;" onclick="if (direction[1] != 1) {direction=[0,-1]; oneInputFlag=1;}">left</div>
+        <div class="block" style="grid-area: right;" onclick="if (direction[1] != -1) {direction=[0,1]; oneInputFlag=1;}">right</div>
+    </div>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js.js"></script>
+
+</body>
+</html>
